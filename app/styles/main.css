@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+}
+
+body{
+  background-image: url('../images/background.jpg');
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100%;
+  padding: 0;
+}
+
+#buttons{
+  text-align: center;
+}
+
+#bar{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-43%, -50%);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
