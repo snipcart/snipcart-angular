@@ -1,0 +1,9 @@
+[{ 
+	"name":"Piña colada", 
+	"price":"8.00",
+	"id": "1",
+	"url":"http://snipcart-angular.netlify.com/",
+	"description":"The piña colada is a sweet cocktail made with rum, coconut cream or coconut milk, and pineapple juice",
+	"image":"http://snipcart-angular.netlify.com/images/pina-colada.3f31d970.png",
+	"weight":"20"
+}]

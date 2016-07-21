@@ -5,26 +5,25 @@
 
       <p class="lead">The piña colada is a sweet cocktail made with rum, coconut cream or coconut milk, and pineapple juice</p>
 
-      
-
   </div>
   <div class="col-lg-4 col-sm-6">
       <img class="img-responsive" src="images/pina-colada.png" alt="">
   </div>
 
    <div class="col-lg-12 col-sm-12">
-      <p id="buttons">
+      <p id="buttons" ng-repeat="product in products">
         <button 
           class="snipcart-add-item btn btn-lg btn-success" 
-          data-item-name="Piña colada" 
-          data-item-price="8.00" 
+          data-item-name="{{product.name}}" 
+          data-item-price="{{product.price}}" 
           data-item-id="1" 
-          data-item-url="http://snipcart-angular.netlify.com/" 
-          data-item-description="The piña colada is a sweet cocktail made with rum, coconut cream or coconut milk, and pineapple juice" 
-          data-item-image="http://snipcart-angular.netlify.com/images/pina-colada.3f31d970.png" 
-          data-item-weight="20" 
+          data-item-url="{{product.url}}" 
+          data-item-description="{{product.description}}" 
+          data-item-image="{{product.image}}" 
+          data-item-weight="{{product.weight}}" 
           ng-href="#/">
           I want some! <span class="glyphicon glyphicon-ok"></span>
-        </button></p>
+        </button>
+      </p>
   </div>
 </div>
