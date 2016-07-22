@@ -1,29 +1,11 @@
-<div id="bar">
-  <div class="col-lg-8 col-sm-6">
+<h1>
+  Let's have a drink
+</h1>
 
-      <h2 class="section-heading">Piña colada</h2>
-
-      <p class="lead">The piña colada is a sweet cocktail made with rum, coconut cream or coconut milk, and pineapple juice</p>
-
-  </div>
-  <div class="col-lg-4 col-sm-6">
-      <img class="img-responsive" src="images/pina-colada.png" alt="">
-  </div>
-
-   <div class="col-lg-12 col-sm-12">
-      <p id="buttons" ng-repeat="product in products">
-        <button
-          class="snipcart-add-item btn btn-lg btn-success"
-          data-item-name="{{product.name}}"
-          data-item-price="{{product.price}}"
-          data-item-id="1"
-          data-item-url="{{product.url}}"
-          data-item-description="{{product.description}}"
-          data-item-image="{{product.image}}"
-          data-item-weight="{{product.weight}}"
-          ng-href="#/">
-          I want some! <span class="glyphicon glyphicon-ok"></span>
-        </button>
-      </p>
+<div class="row">
+  <div ng-repeat="product in products">
+    <div class="col-md-4">
+      <product-list-item product="product"></product-list-item>
+    </div>
   </div>
 </div>

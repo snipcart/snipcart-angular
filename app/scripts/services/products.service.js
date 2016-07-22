@@ -8,7 +8,7 @@
  * Service in the snipcartAngularApp.
  */
 angular.module('snipcartAngularApp')
-  .factory('Product', function ($http) {
+  .factory('Product', function ($http, $q) {
     var json = $http.get('/data/products.json').then(function (response) {
       return response.data;
     });
@@ -18,13 +18,18 @@ angular.module('snipcartAngularApp')
         return json;
       },
       get: function(id) {
-        return json.then(function (items) {
+        var q = $q.defer();
+
+        json.then(function (items) {
           angular.forEach(items, function (item) {
             if (id == item.id) {
-              return item;
+              q.resolve(item);
+              return;
             }
           })
-        }).promise;
+        });
+
+        return q.promise;
       }
     };
   });

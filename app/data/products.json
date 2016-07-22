@@ -9,13 +9,13 @@
 	"name": "Margarita",
 	"price": "9.00",
 	"id": "2",
-	"url:": "http://snipcart-angular.netlify.com/data/products.json",
+	"url": "http://snipcart-angular.netlify.com/data/products.json",
 	"description": "The margarita is a cocktail made with tequila and citrus fruit juice.",
 	"image": ""
 }, {
 	"name": "Beer",
 	"price": "5.00",
-	"id": "2",
+	"id": "3",
 	"url": "http://snipcart-angular.netlify.com/data/products.json",
 	"description": "You know what beer is ;)",
 	"image": ""

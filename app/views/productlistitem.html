@@ -1,0 +1,12 @@
+<div class="thumbnail">
+  <img src="{{$ctrl.product.image}}" />
+
+  <div class="caption">
+    <div>
+      <h2 class="section-heading">{{$ctrl.product.name}}</h2>
+    </div>
+    <div>
+      <a ui-sref="productDetails({productId:$ctrl.product.id})">More details</a>
+    </div>
+  </div>
+</div>

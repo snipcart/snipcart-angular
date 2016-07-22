@@ -9,9 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('snipcartAngularApp', [
-    'ui.router'
-  ])
+  .module('snipcartAngularApp', ['ui.router'])
   .config(function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.when('', '/');
 
@@ -32,9 +30,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .state('products.details', {
+      .state('productDetails', {
         url: '/products/{productId}',
-        templateUrl: 'views/products.html',
+        templateUrl: 'views/productDetails.html',
         controller: 'ProductsCtrl'
       });
   });

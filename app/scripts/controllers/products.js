@@ -8,10 +8,8 @@
  * Controller of the snipcartAngularApp
  */
 angular.module('snipcartAngularApp')
-  .controller('ProductsCtrl', function ($scope, $route, $routeParams) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('ProductsCtrl', function ($scope, $stateParams, Product) {
+    Product.get($stateParams.productId).then(function (product) {
+      $scope.product = product;
+    });
   });

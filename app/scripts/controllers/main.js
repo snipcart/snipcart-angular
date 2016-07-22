@@ -8,9 +8,8 @@
  * Controller of the snipcartAngularApp
  */
 angular.module('snipcartAngularApp')
-  .controller('MainCtrl', function ($scope, $http, Product) {
-    var p = Product.query().then(function (d) {
-      debugger;
-    });
-    debugger;
+  .controller('MainCtrl', function ($scope, Product) {
+    Product.query().then(function (data) {
+      $scope.products = data;
+    })
   });
