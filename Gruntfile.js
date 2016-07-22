@@ -1,4 +1,4 @@
-// Generated on 2016-07-19 using generator-angular 0.15.1
+// Generated on 2016-07-21 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -380,8 +380,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*',
-            'data/*.*'
+            'styles/fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
