@@ -1,4 +1,4 @@
-// Generated on 2016-07-21 using generator-angular 0.15.1
+  // Generated on 2016-07-21 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -220,7 +220,7 @@ module.exports = function (grunt) {
             }
           }
       }
-    }, 
+    },
 
     // Renames files for browser caching purposes
     filerev: {
@@ -379,6 +379,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '*.html',
+            'data/products.json',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
