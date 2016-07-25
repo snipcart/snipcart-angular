@@ -1,8 +1,6 @@
 'use strict';
 
 angular.module('snipcartAngularApp')
-  .controller('MainCtrl', function ($scope, Product) {
-    Product.query().then(function (data) {
-      $scope.products = data;
-    })
+  .controller('MainCtrl', function ($scope, products) {
+    $scope.products = products;
   });

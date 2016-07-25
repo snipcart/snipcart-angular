@@ -20,11 +20,29 @@ angular
       .state('main', {
         url: '/',
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        resolve: {
+          products: function($q, Product) {
+            var def = $q.defer();
+            Product.query().then(function (data) {
+              def.resolve(data);
+            });
+            return def.promise;
+          }
+        }
       })
       .state('productDetails', {
         url: '/products/{productId}',
         templateUrl: 'views/productdetails.html',
-        controller: 'ProductsCtrl'
+        controller: 'ProductsCtrl',
+        resolve: {
+          product: function ($q, $stateParams, Product) {
+            var def = $q.defer();
+            Product.get($stateParams.productId).then(function (data) {
+              def.resolve(data);
+            });
+            return def.promise;
+          }
+        }
       });
   });
