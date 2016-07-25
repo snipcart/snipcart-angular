@@ -1,12 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name snipcartAngularApp.products.service
- * @description
- * # products.service
- * Service in the snipcartAngularApp.
- */
 angular.module('snipcartAngularApp')
   .factory('Product', function ($http, $q) {
     var json = $http.get('/data/products.json').then(function (response) {

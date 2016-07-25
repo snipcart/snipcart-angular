@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name snipcartAngularApp
- * @description
- * # Angular e-commerce website powered by Snipcart
- *
- * Main module of the application.
- */
 angular
   .module('snipcartAngularApp', ['ui.router'])
   .config(function ($urlRouterProvider, $stateProvider) {
@@ -32,7 +24,7 @@ angular
       })
       .state('productDetails', {
         url: '/products/{productId}',
-        templateUrl: 'views/productDetails.html',
+        templateUrl: 'views/productdetails.html',
         controller: 'ProductsCtrl'
       });
   });
