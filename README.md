@@ -4,6 +4,7 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.15.1.
 
 > [See the live demo](http://snipcart-angular.netlify.com/#/).
+
 > [Read the full blog post tutorial](https://snipcart.com/blog/angularjs-ecommerce).
 
 ## Build & development
