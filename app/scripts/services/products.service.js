@@ -15,11 +15,11 @@ angular.module('snipcartAngularApp')
 
         json.then(function (items) {
           angular.forEach(items, function (item) {
-            if (id == item.id) {
+            if (id === item.id) {
               q.resolve(item);
               return;
             }
-          })
+          });
         });
 
         return q.promise;
