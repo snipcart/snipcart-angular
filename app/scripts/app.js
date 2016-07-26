@@ -33,7 +33,7 @@ angular
       })
       .state('productDetails', {
         url: '/products/{productId}',
-        templateUrl: 'views/productdetails.html',
+        templateUrl: 'views/productDetails.html',
         controller: 'ProductsCtrl',
         resolve: {
           product: function ($q, $stateParams, Product) {
